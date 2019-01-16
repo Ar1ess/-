@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>微博实时热搜哦</title>
+  </head>
+  <body>
+    {% for post in posts %}
+    <a href = {{post.url}}>
+        <h3>{{ post.title }} </h3>
+        <h5>热度 :{{ post.num }} </h5>
+    </a>
+    {% endfor %}
+  </body>
+</html>
